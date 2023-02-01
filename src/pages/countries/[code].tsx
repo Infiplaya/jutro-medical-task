@@ -54,7 +54,7 @@ const Country = ({ data }: { data: GetCountryQuery }) => {
           <title>Jutro Medical task</title>
           <meta charSet="UTF-8" />
         </Head>
-        <div className="flex min-h-screen w-full flex-col items-center justify-center bg-blue-800 p-36 text-xl text-white">
+        <div className="flex min-h-screen w-full flex-col items-center justify-center bg-gray-900 p-36 text-xl text-white">
           <section>
             <div className="space-y-10">
               <h1 className="text-7xl">{country?.name}</h1>

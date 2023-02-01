@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { ResultOf, TypedDocumentNode as DocumentNode,  } from '@graphql-typed-document-node/core';
 
 
@@ -36,6 +37,7 @@ export function useFragment<TType>(
   _documentNode: DocumentNode<TType, any>,
   fragmentType: FragmentType<DocumentNode<TType, any>> | ReadonlyArray<FragmentType<DocumentNode<TType, any>>> | null | undefined
 ): TType | ReadonlyArray<TType> | null | undefined {
+  
   return fragmentType as any;
 }
 
