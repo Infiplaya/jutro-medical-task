@@ -16,7 +16,7 @@ export const Profile = () => {
 
   if (loading) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-tr from-green-300 via-blue-500 to-purple-600 text-white">
         <h1 className="text-5xl">Loading...</h1>
       </main>
     );
@@ -24,7 +24,7 @@ export const Profile = () => {
 
   if (error) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-tr from-green-300 via-blue-500 to-purple-600 text-white">
         <h1 className="text-5xl">Error!</h1>
       </main>
     );
@@ -32,11 +32,11 @@ export const Profile = () => {
 
   if (data) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-tr from-green-300 via-blue-500 to-purple-600 text-white">
         <h1 className="mb-10  text-5xl">You are from:</h1>
         {data.country ? (
           <Link href={`/countries/${data.country.code}`}>
-            <section className="rounded-lg bg-blue-600/75 hover:bg-blue-500/75 p-5 shadow-md">
+            <section className="rounded-lg bg-white/10 hover:bg-white/20 p-5 shadow-md">
               <h2 className="text-4xl">{data?.country.name}</h2>
               <h3 className="text-3xl">{data?.country.code}</h3>
             </section>

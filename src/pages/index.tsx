@@ -8,11 +8,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Jutro Medical task</title>
       </Head>
-      <main className="flex min-h-screen w-full flex-col items-center justify-center gap-20 bg-gray-900 text-5xl text-white">
-        <Link href="/countries" className="decoration-blue-500 hover:underline">
+      <main className="flex min-h-screen w-full flex-col items-center justify-center gap-20 bg-gradient-to-tr from-green-300 via-blue-500 to-purple-600 text-5xl text-white">
+        <Link href="/countries" className="decoration-white/10 hover:underline">
           Countries
         </Link>
-        <Link href="/profile" className="decoration-blue-500 hover:underline">
+        <Link href="/profile" className="decoration-white/10 hover:underline">
           Profile
         </Link>
       </main>
